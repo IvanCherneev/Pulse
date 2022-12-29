@@ -1,0 +1,22 @@
+.carousel {
+    min-height: 741px;
+    padding: 81px 0;
+    &__list-sliders {
+        position: relative;
+        list-style-type: none;
+    }
+    &__slider {
+        text-align: center;
+        vertical-align: middle !important // пришлось объявить для переопределения стилей библиотеки
+    } 
+    &__arrow {
+        position: absolute;
+        top: 50%;
+    }
+    &__arrow_left {
+        left: 0;
+    }
+    &__arrow_right {
+        right: 0;
+    }
+}

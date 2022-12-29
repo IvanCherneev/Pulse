@@ -1,0 +1,17 @@
+.arrow {
+    width: 42px;
+    height: 42px;
+    border: 14px solid #C70101;
+    rotate: 45deg;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    &_left {
+        border-top: transparent;
+        border-right: transparent;
+    }
+    &_right {
+        border-bottom: transparent;
+        border-left: transparent;
+    }
+}

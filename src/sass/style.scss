@@ -9,8 +9,11 @@
 }
 
 .container {
-    width: 1140px;
+    max-width: 980px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin: 0 auto;
+    position: relative;
 }
 
 .visually-hidden {
@@ -29,6 +32,8 @@
 @import 'blocks/header';
 @import 'blocks/form';
 @import 'blocks/button';
+@import 'blocks/arrow';
 @import 'blocks/promo';
 @import 'blocks/advantages';
 @import 'blocks/consultation';
+@import 'blocks/carousel';

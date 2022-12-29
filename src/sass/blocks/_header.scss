@@ -1,0 +1,40 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 54px;
+    &__logo-link {
+        display: block;
+        width: 250px;
+    }
+    &__logo-img {
+        width: 100%;
+    }
+    &__representatives {
+        text-align: center;
+        font-weight: 500;
+        font-size: 12px;
+        color: #FFFFFF;
+        span {
+            display: block;
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    &__phone {
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        font-style: normal;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    &__button {
+        margin-top: 4px;
+    }
+}

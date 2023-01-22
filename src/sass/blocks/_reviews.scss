@@ -1,0 +1,42 @@
+.reviews {
+    min-height: 920px;
+    padding-bottom: 48px;
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #0D0D0D;
+    }
+    &__item {
+        margin-top: 60px;
+        display: flex;
+    }
+    &__avatar {
+        width: 169px;
+        height: 169px;
+        border-radius: 100%;
+    }
+    &__content {
+        width: 680px;
+        padding-right: 60px;
+        margin-left: 60px;
+    }
+    &__autor {
+        font-weight: 700;
+        font-size: 18px;
+        color: #0D0D0D;
+    }
+    &__progress {
+        font-weight: 500;
+        font-size: 14px;
+        color: #646464;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: #0D0D0D;
+        margin-top: 20px;
+    }
+}

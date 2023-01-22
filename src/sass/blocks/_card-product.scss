@@ -1,0 +1,116 @@
+.card-product {
+    margin-bottom: 19px;
+    padding: 20px 19px;
+    width: 303px;
+    text-align: center;
+    border: 2px solid #E8E8E8;
+    overflow: hidden;
+    &__wrapper {
+        min-height: 317px;
+        display: flex;
+        width: calc(200% + 38px);
+    }
+    &__base {
+        width: 50%;
+        margin-right: 0;
+        transform: translateX(-100%);
+        transition: transform 1s;
+        &_active {
+            margin-right: 19px;
+            transform: translateX(0);
+        }
+    }
+    &__img {
+        max-width: 100%;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 16px;
+        color: #0D0D0D;
+        margin-top: 15px;
+    }
+    &__desc {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        color: #0D0D0D;
+        margin-top: 15px;
+    }
+    &__link-more {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        color: #C70101;
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+    &__more {
+        position: relative;
+        min-height: 316px;
+        width: 50%;
+        margin-left: 19px;
+        padding-right: 19px;
+        transition: transform 1s;
+        &_active {
+            transform: translateX(-100%);
+            margin-left: 0;
+        }
+    }
+    &__list-possibilities {
+        list-style-type: none;
+        text-align: left;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: #555555;
+    }
+    &__possibility {
+        position: relative;
+        padding-left: 12px;
+        margin-top: 3px;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 5px;
+            height: 5px;
+            background: #C70101;
+            left: 0;
+            top: 6px;
+        }
+    }
+    &__link-back {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        color: #C70101;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 5px);
+        transform: translateX(-50%);
+    }
+    &__line {
+        background: #E8E8E8;
+        margin-top: 17px;
+        height: 1px;
+        border: none;
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 17px;
+    }
+    &__old-price {
+        font-weight: 300;
+        font-size: 14px;
+        text-decoration: line-through;
+        color: #555555;
+        text-align: left;
+    }
+    &__new-price {
+        font-weight: 700;
+        font-size: 20px;
+        color: #050505;
+        text-align: left;
+    }
+}

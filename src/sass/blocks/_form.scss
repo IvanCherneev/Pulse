@@ -10,11 +10,17 @@
         border: none;
         border-radius: 5px;
         padding: 17px 20px;
-    &::placeholder {
-        color: #4B4B4B;
-    }
+        &::placeholder {
+            color: #4B4B4B;
+        }
+        &.error {
+            border: 1px solid red;
+        }
     }
     &__button {
         margin-top: 17px;
+    }
+    &_popup {
+        margin: 0 auto;
     }
 }

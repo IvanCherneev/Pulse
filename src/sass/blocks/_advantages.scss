@@ -10,6 +10,7 @@
     }
     &__list-items {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         list-style-type: none;
         margin-top: 60px;
@@ -17,6 +18,18 @@
     &__item {
         text-align: center;
         width: 280px;
+        margin-right: 10px;
+        &:nth-child(3n) {
+            margin-right: 0;    
+        }
+    }
+    &__img {
+        &_animate {
+            animation: heartbeat 1.8s linear infinite forwards;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
     }
     &__subtitle {
         font-weight: 700;

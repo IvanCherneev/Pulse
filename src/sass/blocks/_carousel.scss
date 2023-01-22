@@ -8,15 +8,35 @@
     &__slider {
         text-align: center;
         vertical-align: middle !important // пришлось объявить для переопределения стилей библиотеки
-    } 
+    }
+    &__slider-img {
+        max-width: 100%;
+    }
     &__arrow {
         position: absolute;
         top: 50%;
     }
     &__arrow_left {
-        left: 0;
+        left: 15px;
     }
     &__arrow_right {
-        right: 0;
+        right: 15px;
+    }
+}
+
+.tns-nav {
+    text-align: center;
+    display: none;
+    button {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        margin: 10px;
+        margin-bottom: 0;
+        background-color: #fff;
+        border: 1px solid #6B6B6B;
+        &.tns-nav-active {
+            background-color: #C70101;
+        }
     }
 }
